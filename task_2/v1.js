@@ -18,7 +18,7 @@ while (true) {
 
 	let result = even.reduce((acc, cur) => acc + cur)
 	if (result > 4000000) {
-		console.log(`Result: ${result}`)
+		console.log(`Result: ${result}`) // OUTPUT: 4613732
 		break;
 	}
 }
