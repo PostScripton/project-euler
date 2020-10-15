@@ -23,4 +23,4 @@ while(true) {
 	num++
 }
 
-console.log(`Result: ${result}`) // OUTPUT: 104743
+console.log('Result:', result) // OUTPUT: 104743

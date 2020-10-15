@@ -95,4 +95,4 @@ for (let row = 0; row < table.length; row++) {
 	}
 }
 
-console.log(`Result: ${result}`) // OUTPUT: 70600674
+console.log('Result:', result) // OUTPUT: 70600674

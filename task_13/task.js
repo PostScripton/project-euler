@@ -11,4 +11,4 @@ function get_numbers() {
 
 let result = get_numbers().reduce((acc, cur) => BigInt(acc) + BigInt(cur)).toString().slice(0, 10)
 
-console.log(`Result: ${result}`) // OUTPUT: 5537376230
+console.log('Result:', result) // OUTPUT: 5537376230

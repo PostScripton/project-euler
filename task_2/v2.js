@@ -18,4 +18,4 @@ while (f2 < limit) {
 	f2 = cur
 }
 
-console.log(`Result: ${sum}`) // OUTPUT: 4613732
+console.log('Result:', sum) // OUTPUT: 4613732

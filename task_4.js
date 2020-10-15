@@ -20,4 +20,4 @@ for (let i = Math.pow(10, digits) - 1; i >= Math.pow(10, digits - 1); i--) {
 	}
 }
 
-console.log(`Result: ${result}`) // OUTPUT: 906609
+console.log('Result:', result) // OUTPUT: 906609

@@ -21,4 +21,4 @@ for (let a = 1; a <= perimeter + 1 && result === 0; a++){
 	}
 }
 
-console.log(`Result: ${result}`) // OUTPUT: 31875000
+console.log('Result:', result) // OUTPUT: 31875000

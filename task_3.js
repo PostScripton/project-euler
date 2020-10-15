@@ -16,4 +16,4 @@ for (let i = 3; i < Math.round(Math.sqrt(num)); i += 2) {
 }
 if (num > max) max = num
 
-console.log(`Result: ${max}`) // OUTPUT: 6857
+console.log('Result:', max) // OUTPUT: 6857

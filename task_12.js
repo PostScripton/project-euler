@@ -36,5 +36,5 @@ while (true) {
 	num++
 }
 
-console.log(`Result: ${triangle}`) // OUTPUT: 76576500
+console.log('Result:', triangle) // OUTPUT: 76576500
 

@@ -18,4 +18,4 @@ let squareOfSum = Math.pow(nums.reduce((acc, cur) => acc + cur), 2)
 
 let result = squareOfSum - sumOfSquares
 
-console.log(`Result: ${result}`) // OUTPUT: 25164150
+console.log('Result:', result) // OUTPUT: 25164150

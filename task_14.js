@@ -37,4 +37,4 @@ while (n < until) {
 	n++
 }
 
-console.log(`Result: ${result}`) // OUTPUT: 837799
+console.log('Result:', result) // OUTPUT: 837799

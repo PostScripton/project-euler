@@ -7,4 +7,4 @@
 const power = 1000 //15
 let result = BigInt(Math.pow(2, power)).toString().split('').reduce((acc, cur) => acc + parseInt(cur), 0)
 
-console.log(`Result: ${result}`) // OUTPUT: 1366
+console.log('Result:', result) // OUTPUT: 1366

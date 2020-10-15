@@ -33,5 +33,5 @@ for (let i = size - 1; i >= 0; i--) {
 	}
 }
 
-console.log(`Result: ${grid[0][0]}`) // OUTPUT: 137846528820
+console.log('Result:', grid[0][0]) // OUTPUT: 137846528820
 

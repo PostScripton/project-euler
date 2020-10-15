@@ -21,4 +21,4 @@ function smallestMultiple() {
 	}
 }
 
-console.log(`Result: ${smallestMultiple()}`) // OUTPUT: 232792560
+console.log('Result:', smallestMultiple()) // OUTPUT: 232792560

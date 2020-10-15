@@ -16,4 +16,4 @@ let result = 0
 for (let i = 2; i < until; i++)
 	if (isPrime(i)) result += i
 
-console.log(`Result: ${result}`) // OUTPUT: 23514624000
+console.log('Result:', result) // OUTPUT: 23514624000

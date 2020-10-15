@@ -37,4 +37,4 @@ number.split('').forEach((digit, index, arr) => {
 	if (num > result) result = num
 })
 
-console.log(`Result: ${result}`) // OUTPUT: 23514624000
+console.log('Result:', result) // OUTPUT: 23514624000

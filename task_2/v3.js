@@ -23,4 +23,4 @@ while (f3 < limit) {
 	f3 = f1 + f2
 }
 
-console.log(`Result: ${sum}`) // OUTPUT: 4613732
+console.log('Result:', sum) // OUTPUT: 4613732
