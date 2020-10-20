@@ -18,6 +18,10 @@
 Каково первое треугольное число, у которого более пятисот делителей?
 */
 
+/*
+https://subscribe.ru/archive/comp.soft.prog.metodpascal/201001/04005037.html
+*/
+
 const until = 500
 let num = 0
 let triangle = 0
