@@ -24,8 +24,7 @@ let result = 0
 
 get_names().sort().forEach((name, index) => {
 	let alphabeticValue = name.split('').reduce((acc, cur) => acc + letterOrder(cur), 0)
-	let score = alphabeticValue * (index + 1)
-	result += score
+	result += alphabeticValue * (index + 1)
 })
 
-console.log('Result:', result)
+console.log('Result:', result) //OUTPUT: 871198282

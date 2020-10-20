@@ -34,4 +34,4 @@ while (num < until) {
 	num++
 }
 
-console.log('\nResult:', result)
+console.log('\nResult:', result) //OUTPUT: 31626

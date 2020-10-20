@@ -13,4 +13,4 @@ const factorial = [...Array(until).keys()].map(v => ++v).reverse()
 let product = BigInt(factorial.reduce((acc, cur) => BigInt(acc) * BigInt(cur)))
 let result = product.toString().split('').map(v => parseInt(v)).reduce((acc, cur) => acc + cur)
 
-console.log('Result:', result)
+console.log('Result:', result) //OUTPUT: 648

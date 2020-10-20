@@ -77,4 +77,4 @@ while (true) {
 	weekday++
 }
 
-console.log('\nResult:', result)
+console.log('\nResult:', result) //OUTPUT: 171
