@@ -7,7 +7,7 @@
 Подсчитайте сумму всех дружественных чисел меньше 10000.
 */
 
-function d(n) {
+function sumOfDivisors(n) {
 	let sqrt = Math.sqrt(n)
 	let sum = 1
 	for (let i = 2; i <= sqrt; i++) {
@@ -25,8 +25,8 @@ let num = 1,
 	result = 0
 
 while (num < until) {
-	let a = d(num) //d(220) = 284
-	let b = d(a) //d(284) = 220
+	let a = sumOfDivisors(num) //d(220) = 284
+	let b = sumOfDivisors(a) //d(284) = 220
 	if (num === b && num !== a) {
 		console.log(`n: ${num} - a: ${a}, b: ${b}`)
 		result += num
