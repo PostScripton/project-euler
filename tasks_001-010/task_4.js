@@ -6,7 +6,7 @@
 */
 
 let result = 0
-let digits = 3 //2
+let digits = 2 //2
 
 for (let i = Math.pow(10, digits) - 1; i >= Math.pow(10, digits - 1); i--) {
 	for (let j = Math.pow(10, digits) - 1; j >= Math.pow(10, digits - 1); j--) {
@@ -14,8 +14,11 @@ for (let i = Math.pow(10, digits) - 1; i >= Math.pow(10, digits - 1); i--) {
 		let reversed = num.toString().split('').reverse().join('')
 
 		if (num.toString() === reversed) {
-			// console.log(`${i} * ${j} = ${num}`)
-			if (num > result) result = num
+			if (num > result) {
+				result = num
+				console.log(`${i} * ${j} =`, num)
+			}
+			else console.log(`${i} * ${j} = ${num}`)
 		}
 	}
 }
