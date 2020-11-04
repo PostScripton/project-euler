@@ -16,9 +16,7 @@ function get_names() {
 	return fs.readFileSync(__dirname + '/names.txt').toString().split(',').map(v => v.slice(1, v.length -1))
 }
 
-function letterOrder(letter) {
-	return 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.indexOf(letter.toUpperCase()) + 1
-}
+const letterOrder = letter => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.indexOf(letter.toUpperCase()) + 1
 
 let result = 0
 

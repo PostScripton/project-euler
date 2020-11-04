@@ -10,7 +10,7 @@ function isPrime(num) {
 	return num > 1
 }
 
-const until = 2000000 //10
+const until = 2 * 10e6 //10
 let result = 0
 
 for (let i = 2; i < until; i++)

@@ -14,7 +14,7 @@ let result = 0
 for (let a = 1; a <= perimeter + 1 && result === 0; a++){
 	for (let b = a + 1; b <= perimeter + 1 && result === 0; b++) {
 		let c = perimeter - a - b
-		if (Math.pow(a, 2) + Math.pow(b, 2) === Math.pow(c, 2)) {
+		if (a ** 2 + b ** 2 === c ** 2) {
 			console.log(`${a} + ${b} + ${c} = ${a + b + c}`)
 			result = a * b * c
 		}

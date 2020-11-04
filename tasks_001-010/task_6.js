@@ -11,7 +11,7 @@
 */
 
 let until = 100 //10
-let nums = Array.from(Array(until).keys()).map(v => v + 1) // массив от 1 до 10
+let nums = [...Array(until).keys()].map(v => v + 1) // массив от 1 до 10
 
 let sumOfSquares = nums.reduce((acc, cur) => acc + Math.pow(cur, 2))
 let squareOfSum = Math.pow(nums.reduce((acc, cur) => acc + cur), 2)

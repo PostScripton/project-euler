@@ -20,7 +20,7 @@ function sumOfDivisors(n) {
 	return sum
 }
 
-const until = 10000
+const until = 10e4
 let num = 1,
 	result = 0
 
