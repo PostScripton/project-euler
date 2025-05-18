@@ -5,20 +5,17 @@
 Найдите сумму всех четных элементов ряда Фибоначчи, которые не превышают четыре миллиона.
 */
 
+let limit = 4000000
 let f1	= 1,
-	f2	= 2
-let even = [f2]
+	f2	= 1
+let sum = 0
 
-while (true) {
+while (f2 < limit) {
+	if (f2 % 2 === 0) sum += f2
+
 	let cur = f1 + f2
 	f1 = f2
 	f2 = cur
-
-	if (cur % 2 === 0) even = [...even, cur]
-
-	let result = even.reduce((acc, cur) => acc + cur)
-	if (result > 4000000) {
-		console.log('Result:', result) // OUTPUT: 4613732
-		break;
-	}
 }
+
+console.log('Result:', sum) // OUTPUT: 4613732
