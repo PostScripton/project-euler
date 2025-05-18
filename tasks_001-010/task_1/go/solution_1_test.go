@@ -8,8 +8,8 @@ func TestFirstSolution(t *testing.T) {
 	for _, tt := range tests {
 		t.Run("", func(t *testing.T) {
 			t.Parallel()
-			if got := FirstSolution(tt.args.number); got != tt.want {
-				t.Errorf("FirstSolution(%d) = %v, want %v", tt.args.number, got, tt.want)
+			if got := FirstSolution(tt.args.until); got != tt.want {
+				t.Errorf("FirstSolution(%d) = %v, want %v", tt.args.until, got, tt.want)
 			}
 		})
 	}
