@@ -1,24 +1,20 @@
-package main
+package solution
 
-import "fmt"
+func FirstSolution(exceedNumber int) int {
+	var result int
 
-const exceedNumber = 4000000
+	first := 1
+	second := 2
 
-func main(){
-    var result int
+	for second < exceedNumber {
+		if second%2 == 0 {
+			result += second
+		}
 
-    first := 1
-    second := 2
+		next := first + second
+		first = second
+		second = next
+	}
 
-    for second < exceedNumber {
-        if second % 2 == 0 {
-            result += second
-        }
-
-        next := first + second
-        first = second
-        second = next
-    }
-	
-    fmt.Println("Result:", result)
+	return result
 }
