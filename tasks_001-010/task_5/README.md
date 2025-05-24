@@ -1,4 +1,4 @@
-# Largest Palindrome Product
+# Smallest Multiple
 
 **Link:** https://projecteuler.net/problem=5
 
