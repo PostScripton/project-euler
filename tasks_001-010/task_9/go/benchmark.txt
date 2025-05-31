@@ -1,0 +1,8 @@
+goos: darwin
+goarch: arm64
+pkg: github.com/PostScripton/project-euler/tasks_001-010/task_9/go
+cpu: Apple M1 Pro
+BenchmarkFirstSolution-10     	   10022	    118092 ns/op	       0 B/op	       0 allocs/op
+BenchmarkSecondSolution-10    	   19970	     60101 ns/op	       0 B/op	       0 allocs/op
+PASS
+ok  	github.com/PostScripton/project-euler/tasks_001-010/task_9/go	4.125s
