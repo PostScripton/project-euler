@@ -1,0 +1,28 @@
+version: '3'
+
+tasks:
+  benchmark:
+    desc: 'Run the Go benchmark for a single task and write it to that task''s go/benchmark.txt. Usage: task benchmark -- N'
+    silent: true
+    cmds:
+      - |
+        if [ -z "{{.CLI_ARGS}}" ]; then
+          echo "Usage: task benchmark -- <task number>" >&2
+          exit 1
+        fi
+
+        NUM=$(printf "%03d" "{{.CLI_ARGS}}")
+        DIR=$(find tasks_* -maxdepth 1 -type d -name "task_${NUM}" | head -1)
+
+        if [ -z "$DIR" ]; then
+          echo "Task ${NUM} not found (expected tasks_XXX-YYY/task_${NUM})" >&2
+          exit 1
+        fi
+
+        if [ ! -d "$DIR/go" ]; then
+          echo "No go/ solution found for task ${NUM} at $DIR" >&2
+          exit 1
+        fi
+
+        go test "./$DIR/go" -bench=. -benchmem | cat > "$DIR/go/benchmark.txt"
+        cat "$DIR/go/benchmark.txt"

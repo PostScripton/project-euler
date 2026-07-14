@@ -1,0 +1,7 @@
+--- FAIL: TestFirstSolution (0.00s)
+    --- FAIL: TestFirstSolution/#00 (0.00s)
+        solution_1_test.go:12: FirstSolution() = 70600674, want 706006740
+FAIL
+exit status 1
+FAIL	github.com/PostScripton/project-euler/tasks_011-020/task_011/go	0.478s
+FAIL

@@ -26,8 +26,14 @@ Run/verify a single task:
 go test ./tasks_001-010/task_001/go -v
 ```
 
-See `/add-solution` for adding new solutions (including migrating legacy task folders) and
-`/benchmark` for running benchmarks.
+See `/add-solution` for adding new solutions (including migrating legacy task folders).
+
+Run a single task's Go benchmark and write it to that task's `go/benchmark.txt`:
+```shell
+task benchmark -- 11
+```
+(see `Taskfile.yml` at the repo root — it resolves the task number to its
+`tasks_XXX-YYY/task_NNN/go` folder)
 
 ## Git Workflow
 
