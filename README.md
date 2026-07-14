@@ -41,11 +41,15 @@ it does not by itself guarantee the code is efficient — see benchmarks below f
 
 Each task's `go/benchmark.txt` holds the last recorded `go test -bench` output (ops/sec, ns/op,
 memory allocations) for that solution, useful for comparing alternative approaches to the same
-problem. Regenerate it with:
+problem. Regenerate it for a single task with the `Taskfile.yml` at the repo root, passing the
+task number:
 
 ```shell
-go test -bench=. -benchmem | cat > benchmark.txt
+task benchmark -- 11
 ```
+
+This resolves the task number to its `tasks_XXX-YYY/task_NNN/go` folder, runs
+`go test -bench=. -benchmem`, and writes the result to that task's `go/benchmark.txt`.
 
 Lower `ns/op` and fewer `allocs/op` are better — use it to compare solutions to the same task, not
 across different tasks.
